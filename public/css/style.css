@@ -1,0 +1,174 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.banner {
+    width: 100vw;
+}
+
+.copy-header {
+    font-weight: 400px;
+    text-align: center;
+}
+
+.hamburguer-button {
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-navbar  {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.lupa {
+    background-color: white;
+    border: solid black;
+    padding: 100px;
+}
+
+.articulos-imagen {
+    width: 100vw;
+}
+
+footer {
+   text-align: center;
+}
+
+footer li{
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+
+.footer-h2-bottom {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.footer-iconos {
+    color: #1259c3;
+    size: 500px;
+}
+
+.footer-h2 {
+    font-size: 20px;
+}
+
+main section article i {
+    display: block ;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 10px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50%;
+    position:relative;
+    right: 20px;
+    top: -15px;
+    color: green;
+    }
+
+.cafetera {
+        border: 1px solid red;
+    }
+.contenedor {
+        border: 5px solid yellow;
+    }
+
+.precio-articulo {
+    font-size: 20px;
+}
+
+.descuento-articulo {
+    font-size: 15px;
+    color: green;
+}
+
+
+
+@media (min-width: 768px){
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin:auto
+    }
+    .main-header-top-bar{
+        align-items: center;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    .copy-header {
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .logo{
+        width: 250px;
+    }
+}
